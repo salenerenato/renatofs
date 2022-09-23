@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Calcule o Quadrado de Cada Numéro e Some o Resultado</h1>
+        <h1>Número 1</h1>
+        <input type="number" id="n1">
+        <p></p>
+        <h1>Número 2</h1>
+        <input type="number" id="n2">
+        <p></p>
+        <h1>Número 3</h1>
+        <input type="number" id="n3">
+        <p></p>
+        <h1>Número 4</h1>
+        <input type="number" id="n4">
+        <p></p>
+        <button onclick="s1(),s2(),s3(),s4(),s5()">Resultado</button>
+        <p></p>
+        <table border="1">
+            <tr>
+                <td id="r1">N1²</td>
+                <td id="r2">N2²</td>
+                <td id="r3">N3²</td>
+                <td id="r4">N4²</td>
+                <td id="r">Soma Total</td>
+            </tr>
+
+        </table><p></p>
+    </center>
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var n3 = document.querySelector('#n3')
+        var n4 = document.querySelector('#n4')
+        var r1 = document.querySelector('#r1')
+        var r2 = document.querySelector('#r2')
+        var r3 = document.querySelector('#r3')
+        var r4 = document.querySelector('#r4')
+        var r = document.querySelector('#r')
+
+        function s1() {
+            r1.innerHTML = "O Valor de N1²: " + n1.value * n1.value;
+        }
+        function s2() {
+            r2.innerHTML = "O Valor de N2²: " + n2.value * n2.value;
+        }
+        function s3() {
+            r3.innerHTML = "O Valor de N3²: " + n3.value * n3.value;
+        }
+        function s4() {
+            r4.innerHTML = "O Valor de N4²: " + n4.value * n4.value;
+        }
+        function s5(){
+            r.innerHTML = "O Valor Total das Somas: " + ((n1.value*n1.value)+(n2.value*n2.value)+
+            (n3.value*n3.value)+(n4.value*n4.value));
+        }
+    </script>
+
+</body>
+
+</html>

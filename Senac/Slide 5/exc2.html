@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+</head>
+
+<body>
+    <script>
+        var altura = [];
+        var sexo = [];
+
+        var contM = 0;
+        var contH = 0;
+        for (var i = 0; i < 50; i++) {
+            var geraAltura = (Math.random() + 1).toFixed(2);
+            altura.push(geraAltura);
+            console.log(altura[i]);
+            if (altura[i] > 1.5) {
+                sexo.push("H");
+                console.log(sexo[i]);
+                contH = contH+1;
+        }
+             else {
+                sexo.push("M");
+                console.log(sexo[i]);
+                contM = contM +1;
+            }
+            
+        }
+        console.log("Homens "+ contH);
+        console.log("Mulheres " + contM);
+            
+            
+    </script>
+</body>
+
+</html>

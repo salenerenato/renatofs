@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-style: double;
+            border-collapse: collapse;
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digite uma Palavra Para Traduzir</h1>
+    <table border="5">
+        <tr>
+            <td>Homem</td>
+            <td>Mulher</td>
+            <td>Filho</td>
+            <td>Filha</td>
+            <td>Criança</td>
+        </tr>
+        <tr>
+            <td>Menino</td>
+            <td>Menina</td>
+            <td>Tio</td>
+            <td>Tia</td>
+            <td>Primo</td>
+        </tr>
+    </table>
+    <p></p>
+    <input id="n">
+    <button onclick="aparecer()">Traduzir</button>
+    <p></p>
+    <h1 id="r"></h1>
+    <script>
+        var nome = document.querySelector("#n")
+        var resultado = document.querySelector("#r")
+
+        function aparecer() {
+            letra = nome.value;
+            switch (letra) {
+                case "Homem":
+                    resultado.innerHTML = "Man";
+                    break;
+                case "Mulher":
+                    resultado.innerHTML = "Woman";
+                    break;
+                case "Filho":
+                    resultado.innerHTML = "Son";
+                    break;
+                case "Filha":
+                    resultado.innerHTML = "Daughter";
+                    break;
+                case "Criança":
+                    resultado.innerHTML = "Child";
+                    break;
+                case "Menino":
+                    resultado.innerHTML = "Boy";
+                    break;
+                case "Menina":
+                    resultado.innerHTML = "Girl";
+                    break;
+                case "Tio":
+                    resultado.innerHTML = "Uncle";
+                    break;
+                case "Tia":
+                    resultado.innerHTML = "Aunt";
+                    break;
+                case "Primo":
+                    resultado.innerHTML = "Cousin";
+                    break;
+                default:
+                    resultado.innerHTML = "Palavra Não Encontrada";
+            }
+        }
+    </script>
+</body>
+
+</html>

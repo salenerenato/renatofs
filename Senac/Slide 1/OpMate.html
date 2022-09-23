@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Resultado de Operaçoes Matematicas Automaticamente</h1>
+            <h1>Numero 1</h1>
+            <input id="n1"><p></p>
+            <h1>Numero 2</h1>
+            <input id="n2"><p></p>
+            <button onclick="somar(),subtrair(),div(),mult()">Resultado</button><p></p>
+            <table border="1">
+                <tr>
+                    <td id="r1">Soma</td>
+                    <td id="r2">Subtração</td>
+                    <td id="r3">Divisão</td>
+                    <td id="r4">Multiplicação</td>
+                </tr>
+            </table>
+    </center>
+
+
+    <script>
+        var n1 = document.querySelector('#n1')
+        var n2 = document.querySelector('#n2')
+        var r1 = document.querySelector('#r1')
+        var r2 = document.querySelector('#r2')
+        var r3 = document.querySelector('#r3')
+        var r4 = document.querySelector('#r4')
+
+        function somar() {
+            r1.innerHTML = "A Soma é "
+                + (parseFloat(n1.value) +
+                    parseInt(n2.value))
+        }
+        function subtrair() {
+            r2.innerHTML = "A Subtração é "
+                + (parseFloat(n1.value) -
+                    parseInt(n2.value))
+        }
+        function div() {
+            r3.innerHTML = "A Divisão é "
+                + (parseFloat(n1.value) /
+                    parseFloat(n2.value))
+        }
+        function mult() {
+            r4.innerHTML = "A Multiplicação é "
+                + (parseFloat(n1.value) *
+                    parseFloat(n2.value))
+        }
+    </script>
+</body>
+
+</html>

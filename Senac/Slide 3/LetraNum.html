@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+</head>
+<body>
+        <h1>Digite seu Nome</h1>
+        <input id="n">
+        <button onclick="aparecer()">Aparece Aqui</button>
+    <script>
+        var nome = document.querySelector("#n")
+        var resultado = document.querySelector("r")
+
+        function aparecer (){
+            letra = nome.value[0];
+            switch(letra){
+                case "A":
+                case "a":
+                    console.log("1");
+                    break;
+                    default:
+                        console.log("Inicial do Nome não encontrada");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Digite o Valor em Dolar $</h1>
+        <input type="number" id="dl">
+        <p></p>
+        <h1>Digite a Cotação do Dolar</h1>
+        <input type="number" id="ctdl">
+        <p></p>
+        <button onclick="caldl()">Calcular Valor em Reais</button>
+        <p></p>
+        <h1 id="res">R$</h1>
+    </center>
+
+    <script>
+        var ctdl = document.querySelector('#ctdl')
+        var dl = document.querySelector('#dl')
+        var rs = document.querySelector('#rs')
+        var resultado = document.querySelector('#res')
+
+        function caldl() {
+            var eq = ctdl.value * dl.value;
+            resultado.innerHTML = ("R$ :" + eq)
+        }    
+    </script>
+</body>
+
+</html>

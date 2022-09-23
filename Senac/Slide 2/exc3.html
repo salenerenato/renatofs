@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <h1>Pagamento de comissão de vendedores de peças</h1>
+        <h1>Nome do Vendedor <input></h1><p></p>
+        <h1>Nome da Peça <input></h1>
+        <h1>Valor da Peça <input id="prp"></h1>
+        <h1>Quantidade Vendida <input id="qtv"></h1><p></p>
+        <button onclick="com()">Calcular Comissão</button><p></p>
+        <h1 id="r">Valor da Sua Comissão é:</h1>
+        
+    </center>
+    <script>
+        var comi = 0.05;
+        var qtv = document.querySelector('#qtv')
+        var prp = document.querySelector('#prp')
+        var r = document.querySelector('#r')
+
+        function com (){
+            var prt = prp.value*qtv.value
+            r.innerHTML =  (parseInt(prt) * parseInt(comi))
+        }
+    </script>
+</body>
+
+</html>
